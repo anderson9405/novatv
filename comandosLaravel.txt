@@ -1,0 +1,54 @@
+---- Laravel commands
+
+* laravel instalation
+- composer global require laravel/installer
+
+* Creación de un proyecto
+- laravel new novatv
+
+
+---- Comandos GIT
+
+* Inicializar repositorio
+- git init
+
+* Guardar cambios en el stage
+- git add .
+
+* Guardar versión
+- git commit -m "vesión #1"
+
+
+---- Comandos artisan
+
+* Artisan: sotware que permite gestionar un programa en laravel desde la línea de comando 
+
+
+* execute migration
+- php artisan migrate
+
+* migrations
+- php artisan migrate:fresh           Drop all tables and re-run all migrations
+- php artisan migrate:install         Create the migration repository
+- php artisan migrate:refresh         Reset and re-run all migrations
+- php artisan migrate:reset           Rollback all database migrations
+- php artisan migrate:rollback        Rollback the last database migration
+- php artisan migrate:status          Show the status of each migration
+
+* Abrir interfaz de consola
+- php artisan tinker
+
+* Create a migration
+- php artisan make:migration create_roles_table;
+
+---- Comandos ORM
+
+++++  CREATE
+$user->save();
+
+
+++++ READ
+$users = User::all(); //obtiene todos los registros 
+$user = User::find(3); // Obtiene un registro específico
+$users = User::find([1,2,3]); //Obtiene varios registros
+$count = User::count(); //Obtiene la cantidad de usuarios
