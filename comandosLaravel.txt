@@ -23,6 +23,7 @@
 - git push -u origin main
 
 
+
 ---- Artisan commands
 
 * Artisan: Software that allows to use laravel from command line 
@@ -39,7 +40,14 @@
 - php artisan migrate:status          Show the status of each migration
 
 * Create seeders
-- php artisan make:seeder RoleSeeder
+  To declare it on laravel
+- php artisan make:seeder RoleSeeder //Siempre 'seeder' al final
+- php artisan make:seeder UserSeeder //Siempre 'seeder' al final
+
+  To migrate them to database
+- php artisan db:seed
+- php artisan migrate:fresh --seed 
+
 
 * Create a model
 - php artisan make:model Role
