@@ -17,3 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test/{name}', [App\Http\Controllers\TestController::class, 'test']);
+Route::get('/user/{id}', [App\Http\Controllers\TestController::class, 'findUser']);

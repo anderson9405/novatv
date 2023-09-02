@@ -61,6 +61,23 @@
 * Create a migration
 - php artisan make:migration create_roles_table
 
+
+---- Controllers
+* Create a controller
+- php artisan make:controller UserController  // it is on app/http/...
+- php artisan make:controller TestController
+
+or (if it is a resource)
+- php artisan make:controller UserController --resource
+- php artisan make:controller CategoryController --resource
+
+
+* Create key
+- php artisan key:generate
+
+* Clean caché
+- php artisan optimize
+
 ---- Factories creation 
 
 * Create a factory
