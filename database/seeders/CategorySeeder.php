@@ -47,7 +47,6 @@ class CategorySeeder extends Seeder
         $category->name='Suspenso';
         $category->description='Películas que mantienen a la audiencia en vilo y expectante debido a la tensión y el misterio.';
         $category->save();
-
-
+        
     }
 }

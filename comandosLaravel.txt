@@ -61,6 +61,16 @@
 * Create a migration
 - php artisan make:migration create_roles_table
 
+---- Factories creation 
+
+* Create a factory
+- php artisan make:factory UserFactory --model=User;
+
+
+
+
+
+
 ---- ORM commands
 
 ++++  CREATE

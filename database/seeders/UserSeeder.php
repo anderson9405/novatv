@@ -31,17 +31,19 @@ class UserSeeder extends Seeder
         $user->role_id=2;
         $user->save();
 
-        for ($i=0; $i < 10; $i++) { 
+        // for ($i=0; $i < 10; $i++) { 
          
-            $user = new User;
-            $user->fullname = "User$i";
-            $user->email = "user$i@gmail.com";
-            $user->phone = "315555555$i";
-            $user->photo = 'images/nophoto.png';
-            $user->password = '1234';
-            $user->role_id=2;
-            $user->save();
-        }
+        //     $user = new User;
+        //     $user->fullname = "User$i";
+        //     $user->email = "user$i@gmail.com";
+        //     $user->phone = "315555555$i";
+        //     $user->photo = 'images/nophoto.png';
+        //     $user->password = '1234';
+        //     $user->role_id=2;
+        //     $user->save();
+        // }
+
+        User::factory(15)->create();
 
     }
 }
