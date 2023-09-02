@@ -21,7 +21,9 @@ return new class extends Migration
 
             //foreign keys
             $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('id')->on('roles');
+            $table->foreign('role_id')->references('id')->on('roles')
+                                        ->onUpdate('cascade')
+                                        ->constrained();
 
             $table->rememberToken();
             $table->timestamps();

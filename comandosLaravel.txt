@@ -67,18 +67,23 @@
 - php artisan make:factory UserFactory --model=User;
 
 
-
-
-
-
 ---- ORM commands
 
 ++++  CREATE
+$user->email = 'homero@gmail.com';
 $user->save();
 
+++++ UPDATE
+$user= User::find(id);
+$user->email = 'homero@gmail.com';
+$user->save();
 
 ++++ READ
 $users = User::all(); //obtiene todos los registros 
 $user = User::find(3); // Obtiene un registro específico
 $users = User::find([1,2,3]); //Obtiene varios registros
 $count = User::count(); //Obtiene la cantidad de usuarios
+
+++++ DELETE
+$user= User::find(id);
+$user->delete();
