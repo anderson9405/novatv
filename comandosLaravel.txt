@@ -78,10 +78,22 @@ or (if it is a resource)
 * Clean caché
 - php artisan optimize
 
----- Factories creation 
+---- Factories creation +
+
+* Documentation
+https://packagist.org/packages/fzaninotto/faker#user-content-formatters
 
 * Create a factory
 - php artisan make:factory UserFactory --model=User;
+- php artisan make:factory MovieFactory --model=Movie;
+
+---- Bootstrap and login installation // Laravel Mixing
+* Install user interface tool
+- composer require laravel/ui
+
+* Install bootstrap
+ php artisan ui bootstrap         //without login
+ php artisan ui bootstrap --auth  //with login
 
 
 ---- ORM commands
