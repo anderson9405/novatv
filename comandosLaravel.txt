@@ -78,6 +78,18 @@ or (if it is a resource)
 * Clean caché
 - php artisan optimize
 
+
+---- Routes
+* listing active routes
+- php artisan route:list // php artisan r:l
+
+* clean caché
+- php artisan route:clear -h
+
+* save caché
+- php artisan route: chache
+
+
 ---- Factories creation +
 
 * Documentation
