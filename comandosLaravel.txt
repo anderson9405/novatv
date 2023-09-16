@@ -22,6 +22,18 @@
 - git remote add origin git@github.com:anderson9405/<projectname>.git
 - git push -u origin main
 
+Clonar el repositorio de github
+git clone git@github.com:anderson9405/novatv.git
+
+volver a instalar los paquetes de laravel
+composer install
+
+volver a instalar paquetes de laravel
+npm install
+
+volver a hacer el .env
+cp .env.example .env
+
 
 ---- Artisan commands
 
@@ -109,6 +121,34 @@ https://packagist.org/packages/fzaninotto/faker#user-content-formatters
  php artisan ui bootstrap --auth  //with login
 
 
+---- Libraries download
+
+Create JS, CSS, images, webfonts on public
+
+* JS folder should have
+sweetalert2@11.js
+owl.carousel.min.js
+jquery.js
+
+* CSS folfer should have
+owl.carousel.min.css
+owl.theme.default.css
+fontawesome-all.min.css
+
+* download sweet alert
+Descargar el contenido de https://cdn.jsdelivr.net/npm/sweetalert2@11
+
+* download owl carousel
+https://owlcarousel2.github.io/OwlCarousel2/    //Downdloads // dist
+
+* download font awesome
+https://fontawesome.com/download    //take the webfonts from download
+
+* download jquery
+https://code.jquery.com/jquery-3.7.1.min.js // create a jquery.js with content
+
+
+
 ---- ORM commands
 
 ++++  CREATE
@@ -129,3 +169,6 @@ $count = User::count(); //Obtiene la cantidad de usuarios
 ++++ DELETE
 $user= User::find(id);
 $user->delete();
+
+
+
