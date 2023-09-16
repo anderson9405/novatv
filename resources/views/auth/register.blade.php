@@ -6,7 +6,13 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <img src="{{ asset('images/elements/register.svg') }}" alt="img" width="250px" class="my-4 img-top-card">
+                <div class="card-header-novatv text-uppercase text-center">
+                    <h5>
+                        <i class="fa fa-user-edit"></i>   
+                        Registro
+                    </h5>    
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -77,12 +83,13 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Submit') }}
+                        <div class="row mb-0 px-2">
+
+                                <button type="submit" class="btn btn-novatv btn-primary text-uppercase" style="background-color: #1F618D">
+                                    Registro
+                                    <i class="fa fa-save"></i>
                                 </button>
-                            </div>
+
                         </div>
                     </form>
                 </div>

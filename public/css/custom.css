@@ -1,0 +1,24 @@
+.bg-novatv{
+    background-color: #1F618D;
+
+}
+
+.btn-novatv{
+    background-color: #1F618D;
+    color: white;
+}
+
+.btn-novatv:hover{
+    background-color: #1F618D;
+    color: rgba(245, 245, 245, 0.351);
+}
+
+.card-header-novatv{
+    background-color: #1F618D;
+    color: white;
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.img-top-card{
+    margin: 0px auto;
+}
