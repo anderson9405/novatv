@@ -22,7 +22,8 @@
 - git remote add origin git@github.com:anderson9405/<projectname>.git
 - git push -u origin main
 
-Clonar el repositorio de github
+
+++++ Clonar el repositorio de github
 git clone git@github.com:anderson9405/novatv.git
 
 volver a instalar los paquetes de laravel
@@ -59,6 +60,9 @@ cp .env.example .env
   it should be related in DatabaseSeeder.php like this:
 - $this->call(CategorySeeder::class);
 
+  The faker options can be consulted on
+- https://packagist.org/packages/fzaninotto/faker#user-content-formatters
+
   To migrate them to database
 - php artisan db:seed
 - php artisan migrate:fresh --seed 
@@ -80,7 +84,7 @@ cp .env.example .env
 - php artisan make:controller UserController  // it is on app/http/...
 - php artisan make:controller TestController
 
-or (if it is a resource)
+or (if it is a resource)->(if it require CRUD)
 - php artisan make:controller UserController --resource
 - php artisan make:controller CategoryController --resource
 
@@ -103,7 +107,7 @@ or (if it is a resource)
 - php artisan route: chache
 
 
----- Factories creation +
+---- Factories creation 
 
 * Documentation
 https://packagist.org/packages/fzaninotto/faker#user-content-formatters
@@ -112,6 +116,10 @@ https://packagist.org/packages/fzaninotto/faker#user-content-formatters
 - php artisan make:factory UserFactory --model=User;
 - php artisan make:factory MovieFactory --model=Movie;
 
+
+
+
+
 ---- Bootstrap and login installation // Laravel Mixing
 * Install user interface tool
 - composer require laravel/ui
@@ -119,6 +127,12 @@ https://packagist.org/packages/fzaninotto/faker#user-content-formatters
 * Install bootstrap
  php artisan ui bootstrap         //without login
  php artisan ui bootstrap --auth  //with login
+
+
+* Node instalation and server
+npm install
+npm run dev
+
 
 
 ---- Libraries download

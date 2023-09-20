@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <img src="{{ asset('images/elements/register.svg') }}" alt="img" width="250px" class="my-4 img-top-card">
+                <img src="{{ asset('images/elements/register.svg') }}" alt="img" width="100px" class="my-4 img-top-card">
                 <div class="card-header-novatv text-uppercase text-center">
                     <h5>
                         <i class="fa fa-user-edit"></i>   

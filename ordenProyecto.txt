@@ -10,8 +10,21 @@ php artisan make:migration create_products-categories_table
 php artisan make:migration create_records_table
 
 * Adapt migrations
-
-* Create models
+* Create models and create models relations
+* Run php artisan migrate to migrate it to database
 
 * Create seeders
+* Create factories
 
+  it should be related in DatabaseSeeder.php like this:
+- $this->call(CategorySeeder::class);
+
+* Create controllers
+
+* Create routes
+* Create views,  with extension .blade.php
+
+Sigo con:
+- rutas
+- vistas
+- Diseño de las vistas
