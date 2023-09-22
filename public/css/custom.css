@@ -22,3 +22,26 @@
 .img-top-card{
     margin: 0px auto;
 }
+
+.navbar-brand{
+    font-size: 0.8rem;
+}
+
+h1{
+    color: #1F618D;
+}
+
+ul.pagination{
+    justify-content: center;
+}
+
+
+ul.pagination .page-item.active .page-link{
+    background-color: #1F618D;
+    border-color: #336180;
+    color: rgba(255, 255, 255, 0.595);
+}
+
+ul.pagination .page-item .page-link{
+    color: #336180;
+}

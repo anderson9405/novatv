@@ -78,6 +78,9 @@ cp .env.example .env
 * Create a migration
 - php artisan make:migration create_roles_table
 
+* Create a request
+- php artisan make:request UserRequest
+
 
 ---- Controllers
 * Create a controller
