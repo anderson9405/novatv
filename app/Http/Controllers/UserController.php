@@ -6,6 +6,7 @@ use App\Http\Requests\UserRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Role;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -22,6 +23,10 @@ class UserController extends Controller
      */
     public function index()
     {
+        if(Auth::user()->role->name != "Admin"){
+            return redirect('home')->with('error', 'no puede acceder a este recurso');
+        }
+
         $users = User::all();
 
         $users = User::paginate(10);
@@ -56,7 +61,7 @@ class UserController extends Controller
         $user->phone = $request->phone;
         if ($request->hasFile('photo')) {
             $file = time().'.'.$request->photo->extension();
-            $request->photo->move(public_path('images/uploads'), $file);
+            $request->photo->move(public_path('images/uploads/'), $file);
             $user->photo= 'images/uploads/'.$file;
         }
         $user->password = bcrypt($request->password);
@@ -92,7 +97,7 @@ class UserController extends Controller
      * Update the specified resource in storage.
      * PUT
      */
-    public function update(Request $request, string $id)
+    public function update(UserRequest $request, string $id)
     {
         $user = User::find($id);
         $user->fullname = $request->fullname;

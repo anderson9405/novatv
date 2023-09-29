@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MovieController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,18 +18,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/test', function () {
 //     $name= "Anderson";
 //     return view('test')->with('name',$name);
 // });
 
-
-Route::get('/test/{name}', [App\Http\Controllers\TestController::class, 'test']);
-Route::get('/user/{id}', [App\Http\Controllers\TestController::class, 'findUser']);
+Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
+// Route::get('/test/{name}', [App\Http\Controllers\TestController::class, 'test']);
+// Route::get('/user/{id}', [App\Http\Controllers\TestController::class, 'findUser']);
 
 
 Auth::routes();
@@ -35,7 +38,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resources([
     'users'=> UserController::class,
-    // 'categories'=> CategorieController::class,
-    // 'movies'=> MovieController::class,
-
+    'categories'=> CategoryController::class,
+    'movies'=> MovieController::class,
 ]);
+
+// Filter
+Route::post('category/filter', [App\Http\Controllers\HomeController::class, 'filter'])->name('filter');

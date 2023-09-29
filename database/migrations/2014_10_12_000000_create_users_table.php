@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('fullname');
             $table->string('email')->unique();
             $table->string('phone');
-            $table->string('photo')->default('no-photo.jpg');
+            $table->string('photo')->default('no-profile.png');
             $table->string('password');
 
             //foreign keys

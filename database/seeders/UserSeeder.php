@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         $user->fullname = 'Jhon Anderson Giraldo';
         $user->email = 'anderson052594@gmail.com';
         $user->phone = '3148898381';
-        $user->photo = 'images/nophoto.png';
+        $user->photo = 'images/no-profile.png';
         $user->password = '1234';
         $user->role_id=1;
         $user->save();
@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
         $user->fullname = 'Homero simpson';
         $user->email = 'homero@gmail.com';
         $user->phone = '3155555555';
-        $user->photo = 'images/nophoto.png';
+        $user->photo = 'images/no-profile.png';
         $user->password = '1234';
         $user->role_id=2;
         $user->save();

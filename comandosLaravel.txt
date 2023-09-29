@@ -80,7 +80,7 @@ cp .env.example .env
 
 * Create a request
 - php artisan make:request UserRequest
-
+- php artisan make:request CategoryRequest
 
 ---- Controllers
 * Create a controller
@@ -90,6 +90,7 @@ cp .env.example .env
 or (if it is a resource)->(if it require CRUD)
 - php artisan make:controller UserController --resource
 - php artisan make:controller CategoryController --resource
+- php artisan make:controller MovieController --resource
 
 
 * Create key

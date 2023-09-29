@@ -67,6 +67,7 @@
 
                 <div class="mb-3">
                 <div class="">
+                    <label for="photo">Rol</label>
                     <input id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" value="{{ $user->role->name }}" disabled>
                 </div>
             </div>

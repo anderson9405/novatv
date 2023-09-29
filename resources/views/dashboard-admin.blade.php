@@ -37,7 +37,7 @@
                         <div class="card text-center">
                             <img src="{{ asset('images/elements/categories.svg') }}" alt="categories" width="130px" class="my-2 img-top-card">
                             <div class="card-body">
-                                <a href="#" class="btn btn-primary btn-block" style="background-color: #1F618D">
+                                <a href="{{ route('categories.index') }}" class="btn btn-primary btn-block" style="background-color: #1F618D">
                                     <i class="fa fa-list-alt"></i>
                                     Módulo categorias
                                 </a>
@@ -51,7 +51,7 @@
                         <div class="card text-center">
                             <img src="{{ asset('images/elements/movies.svg') }}" alt="movies" width="240px" class="my-2 img-top-card">
                             <div class="card-body">
-                                <a href="#" class="btn btn-primary btn-block" style="background-color: #1F618D">
+                                <a href="{{ route('movies.index') }}" class="btn btn-primary btn-block" style="background-color: #1F618D">
                                     <i class="fa fa-film"></i>
                                     Módulo películas
                                 </a>
