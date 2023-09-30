@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->enum('quality', ['Cam', 'full DH', '720p','1080p','4k']);
+            $table->enum('quality', ['Cam', 'FullHD', '720p','1080p','4K']);
             $table->string('image');
             $table->date('release_year');
             $table->integer('reproduction_number');

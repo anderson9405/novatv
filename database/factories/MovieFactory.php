@@ -19,7 +19,7 @@ class MovieFactory extends Factory
         return [
             'name' => fake()->name(),
             'description'=>fake()->realText($maxNbChars = 200, 1),
-            'quality'=>fake()->randomElement(['Cam', 'full DH', '720p','1080p','4k']),
+            'quality'=>fake()->randomElement(['Cam', 'FullHD', '720p','1080p','4K']),
             'image' => fake()->imageUrl(400, 200, 'movie'),
             'release_year' => fake()->date($format = 'Y-m-d', $max = 'now'),
             'reproduction_number'=>fake()->numberBetween($min = 0, $max = 5000),

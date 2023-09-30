@@ -2,7 +2,7 @@
 @section('title','NovaTV - Página de Bienvenida')
 
 @section('content')
-    <div class="row jusrify-content-center">
+    <div class="row jusify-content-center">
         <div class="col-md-12">
             <h3 style="color: #2471A3"><i class="fas fa-tag"></i> Peliculas</h3>
         
@@ -90,6 +90,5 @@
 @endsection
 
 {{----- PROYECTO FINALIZADO VERSIÓN 1.0 -----}}
-{{------ AUTOR: Jhon Anderson Giraldo -------}}
-
+{{------- AUTOR: Jhon Anderson Giraldo ------}}
 
